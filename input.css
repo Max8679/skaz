@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-desk: 450px; 
+}
+
+@layer base {
+
+    @font-face {
+        font-family: 'TelingaterDisplay';
+        src: url('./assets/fonts/TelingaterDisplay.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Forum';
+        src: url('./assets/fonts/Forum.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    body {
+        margin: 0px;
+        font-family: "Telingater Display";
+    }
+
+    h1, h2, h3, h4, h5, h6, p, ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    a {
+        text-transform: none;
+    }
+}
+
+
+@layer components {
+
+    .btn-shadow {
+        box-shadow: 0 0 32px 4px rgba(0,0,0,.5);
+    }
+
+    /* Классы слайдера */
+    .itc-slider {
+    position: relative;
+    width: 86.3vw;
+    }
+
+    .itc-slider-wrapper {
+    overflow: hidden;
+    }
+
+    .itc-slider-items {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+    --gap: 5rem;
+    gap: var(--gap);
+    }
+
+    .itc-slider-transition-none {
+    transition: none;
+    }
+
+    .itc-slider-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    user-select: none;
+    will-change: transform;
+    }
+
+    .itc-slider-item > img {
+        width: 100%;
+    }
+
+    /* кнопки влево и вправо */
+    .itc-slider-btn {
+    position: absolute;
+    top: 53%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    background: transparent;
+    border: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+    }
+
+    .itc-slider-btn-hide {
+    display: none;
+    }
+
+    .itc-slider-btn-prev {
+    left: -4.912rem;
+    }
+
+    .itc-slider-btn-next {
+    right: -4.912rem;
+    }
+    
+ @media screen and (max-width: 450px) {
+        .itc-slider {
+            width: 24.938rem;
+        }
+        .slider-border {
+            border: #7F7D8E solid 0.125rem;
+        }
+        .itc-slider-btn-prev {
+            left: 1.263rem;
+        }
+
+        .itc-slider-btn-next {
+            right: 1.263rem;
+        }
+
+        .itc-slider-btn {
+            width: 0.6581rem;
+            height: 1.1719rem;  
+        }
+    }
+
+}
+
+@layer utilities {
+}
