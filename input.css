@@ -80,7 +80,7 @@
     /* кнопки влево и вправо */
     .itc-slider-btn {
     position: absolute;
-    top: 53%;
+    top: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,26 +98,29 @@
     }
 
     .itc-slider-btn-prev {
-    left: -4.912rem;
+    left: -5.612rem;
     }
 
     .itc-slider-btn-next {
-    right: -4.912rem;
+    right: -5.612rem;
     }
     
  @media screen and (max-width: 450px) {
         .itc-slider {
-            width: 24.938rem;
+            width: 26.938rem;
         }
         .slider-border {
             border: #7F7D8E solid 0.125rem;
         }
+        .itc-slider-btn {
+            top: 53%;
+        }
         .itc-slider-btn-prev {
-            left: 1.263rem;
+            left: 1.288rem;
         }
 
         .itc-slider-btn-next {
-            right: 1.263rem;
+            right: 1.288rem;
         }
 
         .itc-slider-btn {

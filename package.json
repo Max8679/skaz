@@ -12,6 +12,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.14",
+    "pixel-glass": "^1.0.13",
     "tailwindcss": "^4.1.14"
   }
 }
